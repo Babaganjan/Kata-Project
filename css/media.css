@@ -1,0 +1,145 @@
+@media(min-width: 576px) {
+    .hero__text {
+        width: 43%;
+        height: 110px;
+    }
+
+    .hero__wrapper-content {
+        position: relative;
+    }
+
+    .hero__wrapper-content::before {
+        content: "";
+        position: absolute;
+        width: 53%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-image: url(../img/banner_gps.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 6px;
+    }
+
+    .hero__figure {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        padding-inline: 25px;
+    }
+
+    .header__wrapper:first-child {
+        margin-right: auto;
+        gap: 42px;
+    }
+
+    .header__wrapper:nth-child(2) {
+        display: flex;
+        margin-right: 42px;
+        gap: 16px;
+        position: relative;
+    }
+
+    .header__wrapper:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        min-height: 35px;
+        border-radius: 1px;
+        background-color: #EAEAEA;
+        top: 4px;
+        right: -22px;
+        transform: translateX(-50%);
+    }
+
+    .header__item-link--line::before {
+        left: -20px;
+    }
+
+    .hero__title::after {
+        left: -0.8em;
+    }
+
+    .hero__text {
+        height: 160px;
+        margin-bottom: 0.65em;
+    }
+
+    .hero__desc:first-child {
+        margin-bottom: 2.5em;
+    }
+
+    .hero__desc {
+        word-spacing: 0;
+    }
+
+}
+
+@media(min-width: 924px) {
+    .hero__wrapper-content::before {
+        height: 120%;
+    }
+}
+
+@media(min-width: 1120px) {
+    .container {
+        max-width: 1060px;
+        margin: 0 auto;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .hero__container {
+        padding: 42px 30px;
+    }
+
+    .hero__title::after {
+        left: -1.06em;
+    }
+
+    .hero__top--link {
+        display: block;
+    }
+
+    .hero__top {
+        justify-content: space-between;
+    }
+
+    .hero__item-link:first-child {
+        margin-right: 32px;
+    }
+
+    .hero__item-link {
+        outline: 0;
+    }
+
+    .hero__item-link svg {
+        vertical-align: middle;
+    }
+
+    .hero__title {
+        margin-bottom: 0.75em;
+    }
+
+    .hero__wrapper-content::before {
+        height: 160%;
+    }
+
+    .hero__text {
+        width: 45%;
+    }
+
+    .hero__desc {
+        word-spacing: -1px;
+    }
+
+    .menu-list {
+        flex-wrap: wrap;
+    }
+}
