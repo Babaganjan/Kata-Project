@@ -1,6 +1,6 @@
 @media(min-width: 576px) {
     .hero__text {
-        width: 43%;
+        width: 43.5%;
         height: 110px;
     }
 
@@ -11,11 +11,11 @@
     .hero__wrapper-content::before {
         content: "";
         position: absolute;
-        width: 53%;
-        height: 100%;
+        width: 50%;
+        height: 109%;
         top: 0;
         right: 0;
-        background-image: url(../img/banner_gps.jpg);
+        background-image: url(../img/hero_baner.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -29,7 +29,7 @@
 
 @media(min-width: 768px) {
     .container {
-        padding-inline: 25px;
+        padding-inline: 24px;
     }
 
     .header__wrapper:first-child {
@@ -64,17 +64,17 @@
         left: -0.8em;
     }
 
-    .hero__text {
-        height: 160px;
-        margin-bottom: 0.65em;
+    .menu-list {
+        padding-block: 32px;
     }
 
-    .hero__desc:first-child {
-        margin-bottom: 2.5em;
+    .hero__text {
+        height: 160px;
+        margin-bottom: 0.8em;
     }
 
     .hero__desc {
-        word-spacing: 0;
+        line-height: 148%;
     }
 
 }
@@ -87,20 +87,20 @@
 
 @media(min-width: 1120px) {
     .container {
-        max-width: 1060px;
+        max-width: 1200px;
         margin: 0 auto;
+        padding-inline: 34px;
     }
-
     .header {
         display: none;
     }
 
-    .hero__container {
-        padding: 42px 30px;
+    .hero {
+        padding-block: 18px 137px;
     }
 
     .hero__title::after {
-        left: -1.06em;
+        left: -1.22em;
     }
 
     .hero__top--link {
@@ -119,20 +119,18 @@
         outline: 0;
     }
 
-    .hero__item-link svg {
+    .hero__item-link img {
         vertical-align: middle;
     }
 
-    .hero__title {
-        margin-bottom: 0.75em;
-    }
-
     .hero__wrapper-content::before {
-        height: 160%;
+        height: 159%;
+        top: -10px;
     }
 
     .hero__text {
         width: 45%;
+        margin-bottom: 1em;
     }
 
     .hero__desc {
@@ -141,5 +139,7 @@
 
     .menu-list {
         flex-wrap: wrap;
+        padding: 10px 0;
+        gap: 6px 12px;
     }
 }
